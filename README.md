@@ -2,8 +2,8 @@
 
 Name: sıla oral
 Student number: 2404109014
-Department: Management Information syst
-Cource Name: MIS203 Basic Programming
+Department: Management Information systems
+Course Name: MIS203 Basic Programming
 
 ## AI Tool used 
 
