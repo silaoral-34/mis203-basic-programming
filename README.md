@@ -9,7 +9,7 @@ Course Name: MIS203 Basic Programming
 
 AI Tool Used: ChatGPT
 
-Prompt Used: Create a simple Phython program that asks the user for their name,department,age,and career goal, then prints a short student profile.
+Prompt Used: Create a simple Python program that asks the user for their name,department,age,and career goal, then prints a short student profile.
 
 What did you change?
 I changed some parts of the code to make it easier to understand.
