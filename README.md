@@ -1,6 +1,6 @@
 # mis203-basic-programming
 
-Name: sıla oral
+Name: sıla 
 Student number: 2404109014
 Department: Management Information systems
 Course Name: MIS203 Basic Programming
