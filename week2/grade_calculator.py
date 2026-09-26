@@ -24,7 +24,7 @@ elif score >= 60:
 else:
    grade = "f"
 
-print(f{student_name}: {score:g}  -> {grade}")
+print(f"{student_name}: {score:g}  -> {grade}")
 
 students.append(student_name)
 scores.append(score)
