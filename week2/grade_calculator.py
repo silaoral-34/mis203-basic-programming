@@ -7,7 +7,7 @@ while True:
 if student_name == "q":
   break 
   
-score = float(input(Enter score: "))
+score = float(input("Enter score: "))
                     
 if score < 0 or score > 100:
    print("Invalid score. Please enter a number between 0 and 100.")   
@@ -22,7 +22,7 @@ elif score >= 70:
 elif score >= 60:
    grade = "D"
 else:
-   grade = "f"
+   grade = "F"
 
 print(f"{student_name}: {score:g}  -> {grade}")
 
@@ -34,5 +34,5 @@ if len (students) == 0:
 else:
   average = sum(scores) / len(scores)
   print(f"Total students: {len(students)}")
-  print (f"Average score: {average:.2f})
+  print (f"Average score: {average:.2f}")
 
