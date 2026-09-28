@@ -1,1 +1,21 @@
+qty1 = int(input("Enter quantity for Item 1: "))
+price1 = float(input("Enter unit price for Item 1 (TRY): "))
 
+
+qty2 = int(input("Enter quantity for Item 2: "))
+price2 = float(input("Enter unit price for Item 2 (TRY): "))
+
+delivery = float(input("Enter delivery cost (TRY): "))
+tax_rate = 0.10  # 10 percent tax on items
+
+
+items_subtotal = (qty1 * price1) + (qty2 * price2)
+tax_amount = items_subtotal * tax_rate
+total = items_subtotal + tax_amount + delivery
+
+
+print("\n--- Quote Summary ---")
+print(f"Items Subtotal: {items_subtotal:.2f} TRY")
+print(f"Tax (10%):      {tax_amount:.2f} TRY")
+print(f"Delivery:       {delivery:.2f} TRY")
+print(f"Total:          {total:.2f} TRY"
