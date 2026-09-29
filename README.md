@@ -28,4 +28,4 @@ Break stops the loop when the user enters q.
 
 
 
-After initial testing, f-string formatting (`{:.2f}`) was added to ensure all monetary outputs consistently display with exactly two decimal places.
+
