@@ -21,4 +21,4 @@ print(f"{item2_name} ({item2_qty} x {item2_price:.2f} TRY): {line2_total:.2f} TR
 print(f"Subtotal: {subtotal:.2f} TRY") 
 print(f"Tax ({tax_percentage:.0f}%): {tax_amount:.2f} TRY") 
 print(f"Delivery Fee: {delivery_fee:.2f} TRY")
-print(f"Final Total: {final_total:.2f} TRY")
+print(f"Final Total: {final_total:.2f} TRY") 
