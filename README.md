@@ -43,6 +43,27 @@ Break stops the loop when the user enters q.
 * **Why does the order of the rules matter?**
   The first matching rule is applied. For example, a 10-year-old student must be a Child because the Child rule comes before the Student rule.
 
+# Detective Mystery Game
 
+## About the Project
+This is a simple detective game written in Python. A diamond has been stolen, and the player must find the thief by guessing the correct name.
+
+## How to Play
+- There are three suspects: Alice, John, and Emma.
+- The player has two chances to find the thief.
+- Enter the suspect's name to solve the mystery.
+
+## Libraries Used
+- `random`: Selects a random thief.
+- `time`: Adds short delays to the game.
+
+## AI Tool Used
+ChatGPT
+
+## Prompt Used
+Create a simple detective mystery game in Python using at least two libraries.
+
+## What did you change?
+I reviewed the code and customized the game for my assignment.
 
 
