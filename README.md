@@ -41,8 +41,10 @@ Break stops the loop when the user enters q.
   3. Input: Age 6, weekday, student yes → Result: Child ticket, 120.00 TRY.
 
 * **Why does the order of the rules matter?**
-  The first matching rule is applied. For example, a 10-year-old student must be a Child because the Child rule comes before the Student rule.
+The first matching rule is applied. For example, a 10-year-old student must be a Child because the Child rule comes before the Student rule.
 
+   ## Week 04
+  
 # Detective Mystery Game
 
 ## About the Project
