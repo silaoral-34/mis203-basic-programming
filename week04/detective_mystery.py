@@ -1,4 +1,3 @@
-
 import random
 import time
 
@@ -6,25 +5,35 @@ suspects = ["Alice", "John", "Emma"]
 thief = random.choice(suspects)
 
 print("=== THE MISSING DIAMOND ===")
-print("A diamond was stolen!")
+print("A diamond was stolen last night!")
 time.sleep(1)
 
 print("\nSuspects:", suspects)
-print("Clue 1: The thief's name starts with", thief[0])
+print("\nClue 1: The thief was wearing a black jacket.")
 time.sleep(1)
-print("Clue 2: You have two chances to solve the case!")
+print("Clue 2: The thief was seen near the library.")
+time.sleep(1)
 
-for attempt in range(2):
-    answer = input("\nWho is the thief? ").strip().capitalize()
+clues = {
+    "Alice": "She was in the kitchen.",
+    "John": "He was near the library.",
+    "Emma": "She was in the garden."
+}
 
-    if answer == thief:
-        print("Correct! Mystery solved!")
-        break
-    else:
-        print("Wrong answer! Try again.")
+print("\nWitness reports:")
+for name, clue in clues.items():
+    print(name + ":", clue)
+
+answer = input("\nWho is the thief? ").strip().capitalize()
+
+if answer == thief:
+    print("Correct! You solved the mystery!")
 else:
-    print("Case closed! The thief was", thief)
+    print("Wrong suspect! The thief was", thief)
 
-print("Thanks for playing!")
+print("\nCase closed.")
+
+
+
 
 
