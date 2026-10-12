@@ -1,1 +1,61 @@
+print("=== Savings Planner ===")
+
+while True:
+    starting_balance = float(input("Enter starting balance: "))
+    if starting_balance >= 0:
+        break
+    print("Balance cannot be negative.")
+
+while True:
+    deposit = float(input("Enter monthly deposit: "))
+    if deposit >= 0:
+        break
+    print("Deposit cannot be negative.")
+
+while True:
+    rate = float(input("Enter monthly interest rate (%): "))
+    if rate >= 0:
+        break
+    print("Interest rate cannot be negative.")
+
+while True:
+    goal = float(input("Enter savings goal: "))
+    if goal > 0:
+        break
+    print("Goal must be positive.")
+
+balance = starting_balance
+total_interest = 0
+month = 0
+
+if balance >= goal:
+    print("Your savings goal has already been reached!")
+else:
+    print("\nMonth | Interest | New Balance")
+    print("-" * 35)
+
+    while month < 60:
+        month += 1
+
+        interest = balance * rate / 100
+        balance = balance + interest
+        total_interest += interest
+        balance += deposit
+
+        print(f"{month:5} | {interest:8.2f} | {balance:11.2f}")
+
+        if balance >= goal:
+            break
+
+    print("\n=== Savings Summary ===")
+
+    if balance >= goal:
+        print(f"Goal reached in {month} months!")
+    else:
+        print("Goal not reached within 60 months.")
+
+    print(f"Final balance: {balance:.2f}")
+    print(f"Total interest earned: {total_interest:.2f}")
+
+
 
