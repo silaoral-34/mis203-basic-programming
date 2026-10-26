@@ -1,11 +1,10 @@
-
 def calculate_subtotal(price, quantity):
     return price * quantity
 
 
 def get_discount_rate(subtotal):
     if subtotal >= 100:
-        return 0.
+        return 0.10  # 0. yerine 0.10 olarak düzeltildi
     return 0.0
 
 
@@ -37,7 +36,7 @@ def print_quote(order_name, price, quantity):
 
 # Test checks
 assert calculate_subtotal(20, 2) == 40
-assert get_discount_rate(100) == 0.10  # Threshold boundary
+assert get_discount_rate(100) == 0.10  # Artık hata vermeyecek
 assert calculate_shipping(100) == 0
 assert calculate_final_total(100, 0.10, 0) == 90
 
