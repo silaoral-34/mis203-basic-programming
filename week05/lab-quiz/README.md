@@ -1,1 +1,1 @@
-# Week 05 Lab Quiz: Shipping Quote
+# Week 05: Shipping Quote
